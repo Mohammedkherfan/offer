@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /offers
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: offers
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true

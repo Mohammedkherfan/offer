@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  offer:
+    container_name: offer
+    image: postgres
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_USER=offer
+      - POSTGRES_PASSWORD=offer
+      - POSTGRES_DB=offer
+volumes:
+  pg-checkout-service:
+    driver: local
